@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d url('images/lotr-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e5e5e5;
+  font-family: 'Cinzel Decorative', serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f1c40f;
+  text-shadow: 0 0 10px #f39c12, 0 0 20px #d35400;
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 10px #f39c12; }
+  50% { text-shadow: 0 0 25px #e67e22, 0 0 40px #d35400; }
+  100% { text-shadow: 0 0 10px #f39c12; }
+}
+
+.passage {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-left: 4px solid #9b59b6;
+  box-shadow: 0 0 20px #8e44ad44;
+  border-radius: 10px;
+}
+.audio-player {
+  text-align: center;
+  margin: 4rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.audio-player button {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #2c3e50, #000000);
+  color: #f1c40f;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  box-shadow:
+    0 0 10px #f1c40f,
+    0 0 20px #d35400,
+    0 0 40px #9b59b6aa,
+    inset 0 0 10px #f39c12;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: glowRing 3s infinite ease-in-out;
+}
+
+.audio-player button:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 20px #f1c40f,
+    0 0 40px #d35400,
+    0 0 70px #9b59b6,
+    inset 0 0 20px #f39c12;
+}
+
+/* Background ring behind button */
+.audio-player::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 40%, transparent 80%);
+  z-index: 0;
+  animation: pulseRing 5s infinite ease-in-out;
+  box-shadow: 0 0 40px #8e44ad55, 0 0 80px #9b59b688;
+}
+
+@keyframes glowRing {
+  0%, 100% {
+    box-shadow: 0 0 10px #f1c40f, 0 0 20px #d35400, 0 0 40px #9b59b6aa, inset 0 0 10px #f39c12;
+  }
+  50% {
+    box-shadow: 0 0 20px #f1c40f, 0 0 40px #d35400, 0 0 70px #9b59b6aa, inset 0 0 20px #f39c12;
+  }
+}
+
+@keyframes pulseRing {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.8;
+  }
+}
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.photo-gallery img {
+  width: 320px;
+  height: 500px;
+  border: rgb(48, 2, 48) outset;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+  box-shadow: 0 0 20px #000, 0 0 30px #2c3e50;
+}
+
+.photo-gallery img.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+.photo-gallery img:hover{
+  border: #2c3e50 outset;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #080011;
+}
+/* Gandalf Section */
+.gandalf-section {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #9b59b6aa;
+}
+
+.gandalf-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #f8f8f8;
+  text-shadow: 0 0 10px #ffffff88;
+}
+
+.gandalf-img {
+  width: 200px;
+  animation: glowPulse 3s ease-in-out infinite, shakeHover 0s;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gandalf-img:hover {
+  animation: glowPulse 3s ease-in-out infinite, rumble 0.3s infinite;
+}
+
+@keyframes rumble {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  25% { transform: translate(-2px, 2px) rotate(-1deg); }
+  50% { transform: translate(2px, -2px) rotate(1deg); }
+  75% { transform: translate(-2px, -2px) rotate(0deg); }
+  100% { transform: translate(2px, 2px) rotate(1deg); }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+}

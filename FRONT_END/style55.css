@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 1s ease;
+}
+
+.slide.visible {
+  display: flex;
+  animation: fadeZoom 1s ease forwards;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #fff;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+@keyframes fadeZoom {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* BACKGROUND STYLES */
+.bg-stars {
+  background: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+}
+
+.bg-void {
+  background: radial-gradient(circle at center, #000 0%, #111 100%);
+}
+
+.bg-flame {
+  background: radial-gradient(circle, #330000, #000);
+}
+
+.bg-temple {
+  background: url('https://images.unsplash.com/photo-1585079547960-2709b1a2d5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+}
+
+.bg-cosmos {
+  background: url('https://images.unsplash.com/photo-1447433819943-74a20887a3a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+}

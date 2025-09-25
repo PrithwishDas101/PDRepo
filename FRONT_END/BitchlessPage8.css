@@ -1,0 +1,123 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Body === */
+body {
+  background: radial-gradient(circle, #3c4101, #004400);
+  color: #f7f3d4;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  padding: 2rem;
+  background-attachment: fixed;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+  background: rgba(30, 45, 20, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 25px #889c59;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffd966; /* warm goldenrod */
+  text-shadow: 0 0 10px #e1c24a, 0 0 20px #b3972f;
+}
+
+/* === Villager GIF === */
+.village-gif {
+  text-align: center;
+  margin: 0 auto 2rem;
+  animation: fadeInDance 2s ease-in;
+}
+
+.village-gif img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #e1c24a;
+}
+
+/* === Forest Sections === */
+.forest-section {
+  background: rgba(35, 50, 25, 0.9);
+  border-left: 6px solid #889c59; /* earthy green */
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #667947;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.forest-section h2 {
+  font-size: 2.2rem;
+  color: #ffe58f;
+  text-shadow: 0 0 6px #eacb61, 0 0 12px #bca24c;
+  margin-bottom: 0.5rem;
+}
+
+.forest-section p {
+  color: #e1ebc6;
+  text-shadow: 0 0 3px #3e5330;
+}
+
+/* === Scattered Images === */
+.forest-img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #5e7242;
+  position: absolute;
+  animation: popIn 1s ease-out;
+  opacity: 0.95;
+}
+
+#photo{
+border: 5px rgb(0, 7, 0) outset;
+animation: FadeIn 2s ease forwards;
+}
+
+#photo:hover{
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 30px #aeb9b0, 0 0 60px #34e76f;
+  filter: brightness(1.2);
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.img1 { top: 200px; left: 5%; }
+.img2 { top: 440px; right: 8%; }
+.img3 { top: 880px; left: 8%; }
+.img4 { top: 1150px; right: 8%; }
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInDance {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

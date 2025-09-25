@@ -1,0 +1,40 @@
+.conatainer{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 8em;
+    border-radius: 15px;
+}
+#box1{
+    background-color: rgb(6, 6, 78);
+}
+#box2{
+    background-color: rgb(121, 28, 63);
+}
+#box3{
+    background-color: rgb(46, 54, 17);
+}
+#box4{
+    background-color: rgba(189, 31, 31, 0.589);
+}
+#box5{
+    background-color: rgba(102, 172, 45, 0.507);
+}
+#box6{
+    background-color: rgb(47, 166, 212);
+}
+#box7{
+    background-color: rgb(11, 18, 119);
+}
+#box8{
+    background-color: rgba(87, 36, 36, 0.589);
+}

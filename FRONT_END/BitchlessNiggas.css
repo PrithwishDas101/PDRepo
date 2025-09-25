@@ -1,0 +1,125 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(160deg, #0f0f0f, #1a1a1a);
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  padding-bottom: 5rem;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #111, #222);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff4444aa;
+}
+
+header img#logo {
+  width: 120px;
+  margin-top: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ff4444aa;
+  animation: glow 1.2s ease infinite;
+}
+
+@keyframes glow{
+    0% {
+    filter: drop-shadow(0 0 8px #ff1e1e);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px #ff4444);
+    transform: scale(1.05);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #ff1e1e);
+    transform: scale(1.02);
+  }
+}
+
+/* === Profile Pic Section === */
+#profilepic {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#profilepic img#profile {
+  width: 90vw;                 /* almost full screen */
+  max-width: 1000px;           /* but never exceed this */
+  height: auto;
+  border-radius: 0px;          /* rectangle shape */
+  border: 5px solid #ff4444;
+  box-shadow: 0 0 25px #ff4444cc, 0 0 60px #ff333366;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#profilepic img#profile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px #ff5555cc, 0 0 80px #ff4444aa;
+}
+
+/* === Main Text Area === */
+main {
+  padding: 2rem 4%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid #333;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #ff000011;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #e2e2e2;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* === Navigation Bar === */
+#navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.9);
+  border-top: 1px solid #444;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.7rem 0;
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.2s ease-in-out;
+}
+
+.list a:hover {
+  color: #ff5555;
+  text-shadow: 0 0 10px #ff3333aa;
+  transform: scale(1.05);
+}

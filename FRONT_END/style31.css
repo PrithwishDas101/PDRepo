@@ -1,0 +1,18 @@
+body{
+    background-image: url(images/payment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.2em;
+    font-family: verdana;
+}
+#mySubmit{
+    font-size: 1.299999999999999999999em;
+    background-color: rgb(212, 167, 167);
+}
+#mySubmit:hover{
+    background-color: rgba(161, 126, 126, 0.767);
+    font-size: 1.399999;
+    font-family: verdana;
+}

@@ -1,0 +1,77 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #040d11, #02060a);
+  color: #ccfaff;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+  padding: 2rem;
+}
+
+/* Wrapper for neon glow */
+.hacker-wrapper {
+  background: rgba(10, 20, 30, 0.75);
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 40px #0ff8, inset 0 0 20px #022;
+  animation: pulseGlow 3s ease-in-out infinite alternate;
+}
+
+/* Heading */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #78f3f3;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0aa;
+  margin-bottom: 2rem;
+}
+
+/* Images */
+.img-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ban-img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #033;
+  transition: transform 0.3s ease;
+}
+.ban-img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 30px #00ffee, 0 0 50px #0ff;
+}
+
+/* Paragraph */
+.ban-para {
+  background: rgba(5, 15, 25, 0.8);
+  border-left: 5px solid #0ff;
+  padding: 1rem 1.5rem;
+  margin: auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00ffee40;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #e2feff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+/* Neon Pulse Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 40px #0ff8, inset 0 0 20px #022;
+  }
+  100% {
+    box-shadow: 0 0 60px #00ffee, inset 0 0 30px #044;
+  }
+}

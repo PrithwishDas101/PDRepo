@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(116, 15, 15);
+    text-align: center;
+    font-size: 8em;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#box1{
+    animation-timing-function: steps(5);
+}
+#box2{
+    animation-timing-function: linear;
+}
+#box3{
+    animation-timing-function: step-in-out;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+@keyframes slideRight{
+    to{transform: translateX(300%)}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+@keyframes slideDown{
+    to{transform: translateY(300%)}
+}
+@keyframes rotate{
+    50%{transform: rotateZ(180deg);}
+}
+@keyframes grow{
+    100%{transform: scale(2, 2)}
+}
+@keyframes shrink{
+    100%{transform: scale(0.5, 0.5);}
+}
+@keyframes fade{
+    50%{opacity: 1;}
+}
+@keyframes colorChange{
+      0%{background-color: rgba(55, 114, 165, 0.884)}
+     20%{background-color: rgba(185, 114, 66, 0.89)}
+     40%{background-color: rgba(106, 40, 168, 0.808)}
+     60%{background-color: rgba(42, 146, 42, 0.932)}
+     80%{background-color: rgba(163, 48, 128, 0.822);}
+    100%{background-color: rgba(114, 28, 47, 0.808)}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px rgb(110, 146, 37);}
+}

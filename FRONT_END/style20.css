@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+.box{
+    font-size: 8em;
+    border: 5px solid;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(32, 158, 32, 0.61);
+    transform: translate(100px, 100px) rotate(135deg) scale(0.6, 0.6);
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: red;
+}
+#box3{
+    background-color: green;
+}

@@ -1,0 +1,7 @@
+#container{
+    border: 5px outset;
+    border-color: rgb(42, 131, 131);
+}
+#container + p{
+    background-color: darkgoldenrod;
+}

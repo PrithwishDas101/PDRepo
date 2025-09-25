@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100lvh;
+    background: #2e2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 30px 0 55px;
+    margin-bottom: 30px;
+    background-color: #8b8383;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 20px 20px 42px #948e8e, -20px -20px 42px #aaa5a5;
+    width: 40rem;
+}
+.card .profilepic{
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    z-index: 1;
+    position: relative;
+    border-radius: 20%;
+}
+.card .profilepic::before{
+    content: '';
+    width: 100%;
+    height: 0;
+    border-radius: 100%;
+    background-color: #1b1818;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3.2);
+    transition: all 0.3s linear 0;
+}
+.card:hover .profilepic::before{
+    height: 100%;
+}
+.card .profilepic::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #0f0e0e;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+.card .profilepic img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+.card:hover .profilepic img{
+  box-shadow: 0 0 0 14px #b6b5b0;
+  transform: scale(0.7);
+}
+.card .main-content{
+  margin-bottom: -19px;
+}
+.card .main-content .title{
+  display: block;
+  font-size: 1.5rem;
+  color: #131010;
+  text-transform: capitalize;
+  margin: 7px 37px 0;
+}
+.card .main-content .name{
+  padding: 0;
+  margin: 8px;
+  text-transform: uppercase;
+}
+.card .social{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1b1b19;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+.card:hover .social{
+  bottom: 0;
+}
+.card .social li{
+  display: inline-block;
+}
+.card .social li a{
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #f3ebeb;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.card .social li a:hover{
+  color: #322f38;
+  background-color: #dfddd4;
+  transition: 0.5s;
+}
+.skills{
+  text-align: left;
+  padding: 20px;
+}
+.skills h6{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.skills ul li {
+  border: 1px solid #0e0c0c;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 9px 9px 0;
+  padding: 9px;
+}
+.skills ul li:hover {
+  background-color: #141313;
+  color: #eee8e8;
+  cursor: pointer;
+  transition: 0.5s;
+}

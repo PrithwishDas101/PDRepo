@@ -1,0 +1,9 @@
+body{
+     background-image: url(images/tublu.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.2em;
+    font-family: verdana;
+}

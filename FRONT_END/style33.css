@@ -1,0 +1,52 @@
+body{
+    background-image: url(images/temperature.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: doto;
+}
+h1{
+    color: rgba(38, 38, 165, 0.719);
+}
+form{
+    background-color: rgb(206, 197, 185);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(15, 0, 0);
+}
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(10, 1, 1, 0.671);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: rgba(173, 17, 17, 0.932);
+    color: aliceblue;
+    font-size: 1.6em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(77, 2, 2);
+}
+button:active{
+    background-color: rgb(43, 1, 1);
+}
+#result{
+    font-size: 1.7em;
+    font-weight: bold;
+}

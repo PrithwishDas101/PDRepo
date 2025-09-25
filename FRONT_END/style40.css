@@ -1,0 +1,19 @@
+#myBox{
+    background-color: rgb(77, 158, 77);
+    width: 300px;
+    height: 300px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#myBtn{
+    background-color: rgb(90, 95, 90);
+    width: 100px;
+    height: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}

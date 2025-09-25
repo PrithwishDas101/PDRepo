@@ -1,0 +1,25 @@
+ body{
+    background-image: url(images/dice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: verdana;
+    text-align: center;
+}
+#myBtn{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 2px outset rgba(12, 10, 10, 0.637)
+}
+.myLabels{
+    font-size: 3em;
+    color: rgb(180, 192, 202);
+    background-color: rgb(33, 116, 116);
+    display: inline-flex;
+    border-radius: 5px;
+    border: 2px outset rgb(63, 129, 93);
+    font-family: verdana;
+    text-align: center;
+}

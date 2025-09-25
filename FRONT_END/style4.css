@@ -1,0 +1,21 @@
+h1{
+    margin: 0px;
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+#box1{
+    background-color: rgb(134, 24, 24);
+    margin-left: 50px;
+}
+#box2{
+    background-color: rgb(25, 25, 128);
+    margin-left: 307px;
+}
+#box3{
+    background-color: rgb(129, 172, 51);
+    margin-left: 564px;
+}

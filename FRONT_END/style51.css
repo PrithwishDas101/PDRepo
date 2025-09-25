@@ -1,0 +1,121 @@
+@import url("http://fonts.cdnfonts.com/css/sansation");
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact-container{
+  background-image: url(images/hecker.jpg);
+  background-size: cover;
+  height: 100lvh;
+}
+.main-content {
+  position: absolute;
+  width: 500px;
+  left: 60%;
+  height: 600px;
+  top: calc(50% - 580px / 2);
+  background: #e4e2e2;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.title{
+  font-family: Sansation;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 145px;
+  align-items: center;
+  font-family: "Sansation", sans-serif;
+  color: #4340da;
+}
+.logo{
+  width: 120px;
+  height: 120px;
+  margin-top: -40px;
+  border: 5px black solid;
+  border-radius: 75%;
+}
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.3rem;
+  color: #123c7a;
+  padding: 20px 10px 20px 5px;
+  border: 2px solid #4372c9;
+  width: 280px;
+  height: 45px;
+  margin: 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Scheherazade New", serif;
+}
+input[type="checkbox"]{
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  height: 25px;
+  width: 25px;
+}
+::placeholder{
+  color: #6792d3;
+  font-size: 25px;
+}
+.icon{
+  position: absolute;
+  padding: 24px 32px;
+  height: 75px;
+  width:90px;
+}
+.keepme{
+  margin: 15px;
+  color: #30769e;
+  font-family: "Scheherazade New", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.submit{
+  font-size: 2rem;
+  background: #265eb3;
+}
+button{
+  width: 260px;
+  height: 45px;
+  left: 1273px;
+  top: 780px;
+  font-family: "Sansation", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+  color: #f0eaea;
+  border: none;
+  background: rgba(135, 113, 224, 0.89);
+  border-radius: 25px;
+}
+.link{
+  text-align: center;
+  display: block;
+  margin: 18px;
+  color: #31749b;
+  font-size: 1.5rem;
+  font-family: "Scheherazade New", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  .contact-container {
+    background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
+  }
+  .right {
+    left: calc(68% - 500px / 2);
+  }
+}

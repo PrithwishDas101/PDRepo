@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: rgba(179, 187, 187, 0.815);
+    text-align: center;
+    padding: 25px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.884);
+    height: 50px;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+footer{
+    clear: both;
+    display: block;
+    background-color: rgb(114, 111, 108);
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) {
+    aside, section, article{
+        width: 100%;
+    }
+}

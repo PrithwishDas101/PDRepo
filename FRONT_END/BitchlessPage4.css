@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #1f0036, #3a0ca3, #4361ee, #4cc9f0);
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
+  color: #ffffff;
+}
+
+@keyframes gradientFlow{
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header{
+  text-align: center;
+  padding: 4rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.header h1{
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #e0e0e0;
+}
+
+.passage-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.glowing-card {
+  flex: 1 1 300px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid #ffffff20;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px #00f2ff88, 0 0 5px #ff00ff66;
+  transition: transform 0.3s ease;
+}
+
+.glowing-card:hover {
+  transform: scale(1.05);
+}
+
+.glowing-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.glowing-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 450px;
+  border-radius: 16px;
+  border: #1f0036 outset;
+  box-shadow: 0 0 15px #ffffff30;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #00f2ff;
+}
